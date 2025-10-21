@@ -8,6 +8,19 @@ package Modelo;
  *
  * @author Miguel
  */
-public class VehiculoConConvenio {
+public class VehiculoConConvenio extends Vehiculo{
     
+    String fechaAfiliacion;
+    
+    public VehiculoConConvenio(String placa, String modelo, Propietario propietario, String fechaAfiliacion) {
+        super(placa, modelo, propietario);
+        this.fechaAfiliacion = fechaAfiliacion;
+    }
+    
+    @Override
+    
+    public String adicionarReparacion(Reparacion nvaReparacion){
+    String message = "";
+    return message;
+    }
 }
