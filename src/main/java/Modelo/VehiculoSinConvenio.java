@@ -8,6 +8,19 @@ package Modelo;
  *
  * @author Miguel
  */
-public class VehiculoSinConvenio {
+public class VehiculoSinConvenio extends Vehiculo{
     
+    String aseguradora;
+
+    public VehiculoSinConvenio(String placa, String modelo, Propietario propietario, String aseguradora) {
+        super(placa, modelo, propietario);
+        this.aseguradora = aseguradora;
+    }
+    
+    @Override
+    
+    public String adicionarReparacion(Reparacion nvaReparacion){
+    String message = "";
+    return message;
+    }
 }
